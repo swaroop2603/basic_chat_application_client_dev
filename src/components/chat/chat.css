@@ -1,0 +1,245 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.chat_window {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.header_bar_header {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.search_bar {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.input_search {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background: linear-gradient(to right,#04619F, #7ED6DF);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.input_search::placeholder{
+  padding-left: 10px;
+  color: white;
+}
+/* Add this to your CSS file */
+.channel-logo {
+  width: 35px; /* Set the desired width */
+  height: 35px; /* Set the desired height */
+  margin-right: 8px; /* Adjust the margin as needed for spacing */
+}
+.user-logo {
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  margin-right: 8px; /* Adjust the margin as needed for spacing */
+}
+/* Add this style to your component or CSS file */
+.floating-button {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  background-color: #3498db; /* Change the color as needed */
+  color: #ffffff; /* Change the text color as needed */
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ti-messages-container {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  background-color: #3498db; /* Change the color as needed */
+  color: #ffffff; /* Change the text color as needed */
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ti-edit-container {
+  position: fixed;
+  bottom: 160px;
+  left: 20px;
+  background-color: #3498db; /* Change the color as needed */
+  color: #ffffff; /* Change the text color as needed */
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Add this to your existing styles or create a new CSS file */
+
+.edit-widget {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  max-width: 400px;
+  width: 100%;
+  max-height: 70vh; /* Set the maximum height to 70% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrollbar if needed */
+  box-sizing: border-box;
+}
+
+.edit-widget p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.edit-widget-close-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+}
+
+.employee-list {
+  margin-top: 15px;
+}
+
+.employee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.employee-item button {
+  background-color: #ff6961;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.floating-button:hover {
+  background-color: #2980b9; /* Change the hover color as needed */
+}
+
+.chat_container {
+  flex: 1;
+  display: flex;
+  height: 86vh;
+} 
+
+.chat_box {
+  width: 25%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  background: linear-gradient(to right,#2C3E50, #000000);
+}
+
+.chats_message_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  
+
+  
+}
+
+
+.chats_message_button {
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to right,#2C3E50, #000000);
+  align-items: center;
+  justify-content: center; 
+  border:  none;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+  font-weight: bold; /* Make the text bold */
+  color:#FFFAFA; /* Set text color */ /* Smooth transition on hover */
+}
+
+.chats_message_button:hover {
+  background: linear-gradient(to right,#8B939A,#5B6467);/* Change background color on hover */
+}
+
+.chat_Messages {
+  flex: 1;
+  overflow-y: auto;
+  width: 75%;
+}
+
+
+
+
+.channel_toggle_button {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  
+  border:none ;
+  padding: 10px; /* Adjust padding as needed */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background: linear-gradient(to right,#2C3E50, #000000);
+  font-weight: bold; /* Make the text bold */
+  color: #FFFAFA; /* Set text color */ /* Smooth transition on hover */
+}
+
+/* .channel_toggle_button.down {
+  transform: rotate(90deg); 
+} */
+
+.channel_toggle_button:hover {
+  background-color: gray; /* Change background color on hover */
+}
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-button:hover {
+  background-color: #ddd;
+}

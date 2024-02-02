@@ -1,0 +1,85 @@
+.container {
+    width: 300px; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .underline {
+    width: 40px;
+    height: 2px;
+    background-color: #333;
+    margin: 0 auto 20px;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .img {
+    width: 20px;
+    color: rgba(150, 150, 150, 1);
+    margin-right: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .create-company {
+    margin-top: 10px;
+    color: #2979FF;
+    cursor: pointer;
+  }
+  
+  .create-company span {
+    font-weight: bold;
+  }
+  
+  .submit-conatiner {
+    margin-top: 20px;
+  }
+  
+  .submit {
+    background-color: #2979FF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #2558a4;
+  }
+  

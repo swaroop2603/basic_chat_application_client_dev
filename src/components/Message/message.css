@@ -1,0 +1,93 @@
+/* Add the following styles for the time */
+.messageTime {
+  font-size: 70%;
+  color: #888;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  padding: 0.1rem;
+  margin-top: 10px; /* Increase the margin-top for more space between message and time */
+}
+
+/* Adjust the styles for the message box */
+.messageBox {
+  position: relative;
+  margin-bottom: 10px;
+  min-width: 50px; /* Set a minimum width for the message box */
+  max-width: 80%; /* Adjust the max-width as needed */
+}
+
+/* Ensure the message box has relative positioning */
+.messageContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5%;
+  margin-top: 3px;
+}
+
+.messageBox {
+  background: #F3F3F3;
+  border-radius: 20px;
+  padding: 10px; /* Adjust padding for better spacing */
+  margin-top: 10px; /* Add margin-top to create space between message and time */
+  color: white;
+  display: inline-block;
+  position: relative;
+  overflow: hidden; /* Hide overflow content if necessary */
+}
+
+.messageText {
+  width: 100%;
+  letter-spacing: 0;
+  float: left;
+  font-size: 1.1em;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+  margin-bottom: 1rem;
+}
+
+.messageText img {
+  vertical-align: middle;
+}
+
+.sentText {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica;
+  color: white;
+  letter-spacing: 0.3px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorDark {
+  color: #353535;
+}
+
+.backgroundBlue {
+  background: #2979FF;
+}
+
+.backgroundLight {
+  background: #F3F3F3;
+}

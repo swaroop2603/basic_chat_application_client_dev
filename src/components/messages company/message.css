@@ -1,0 +1,153 @@
+.message_conatiner_company {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+.messages_company_icons{
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  cursor: pointer; /* Add this to make it look like a button */
+  margin-right: 15px;
+
+}
+  .message_header_company {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right,#414141, #000000);
+    color: #FFFAFA;
+    height: 10%;
+    border-bottom: 1px solid blue;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+  
+  padding-right: 10px; 
+  }
+  .user-dropdown {
+    position: relative;
+  }
+  
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Adjusted to display to the left */
+  max-height: 120px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: black;
+  border: 1px solid #ccc;
+  padding: 8px;
+  z-index: 1;
+}
+
+.dropdown-item-users {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.user-dropdown-users {
+  position: relative;
+}
+
+.dropdown-menu-users {
+position: absolute;
+top: 100%;
+right: 0; /* Adjusted to display to the left */
+max-height: 120px; /* Set a fixed height */
+overflow-y: auto; /* Enable vertical scrolling */
+background-color:black; 
+border: 1px solid #ccc;
+padding: 8px;
+z-index: 1;
+}
+
+.dropdown-item {
+cursor: pointer;
+padding: 8px;
+}
+/* ... (existing CSS) */
+
+/* Add this CSS for the new dropdown */
+.new-dropdown-menu {
+  position: absolute;
+  top: 30px; /* Adjust the top position based on your layout */
+  right: 0;
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  max-height: 150px; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+}
+
+.new-dropdown-menu .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* ... (existing CSS) */
+
+  /* Add more styles as needed */
+  
+  .message_body_company {
+    flex: 1;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 8px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .message_input_company {
+    height: 15%;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .message_input_company textarea {
+    height: 80%;
+    width: 90%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-right: 8px;
+  }
+  
+  .message_input_company button {
+    width: 10%;
+    height: 80%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .message_input_company button:hover {
+    background-color: #45a049;
+  }
+  .messages_scrolltobottom_company{
+    
+      /* padding: 5% 0; */
+      overflow: auto;
+      flex: auto;
+    
+  }
